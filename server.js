@@ -4,9 +4,9 @@ const crypto = require('crypto');
 const Web3 = require('web3');
 
 const app = express();
-const web3 = new Web3('https://mainnet.infura.io/v3/3e2069a4b6454b729d57e2d37401d2f5'); // Replace YOUR-PROJECT-ID with your Infura project ID
+const web3 = new Web3('https://mainnet.infura.io/v3/YOUR-PROJECT-ID'); // Replace YOUR-PROJECT-ID with your Infura project ID
 
-mongoose.connect('mongodb://127.0.0.1:27017/tutorial', { useNewUrlParser: true })
+mongoose.connect('mongodb://127.0.0.1:27017/database', { useNewUrlParser: true })
   .then(() => {
     console.log('Connected to MongoDB');
   })
